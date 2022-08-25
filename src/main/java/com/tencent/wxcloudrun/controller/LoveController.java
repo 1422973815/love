@@ -28,7 +28,7 @@ public class LoveController {
     @Autowired
     private TokenFeignClient tokenFeignClient;
 
-    @Scheduled(cron = "0 30 7 * * ?")
+    @Scheduled(cron = "0 0 9 * * ?")
     public void love() throws Exception {
         // 准备
         MsgTemplate msgTemplate = new MsgTemplate();
