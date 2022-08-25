@@ -3,6 +3,8 @@ server:
 
 
 spring:
+  application:
+    name: love
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
@@ -12,6 +14,8 @@ spring:
     view:
       suffix: .html
       prefix: /
+  main:
+    allow-bean-definition-overriding: true
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
